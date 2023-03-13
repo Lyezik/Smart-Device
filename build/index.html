@@ -12,29 +12,36 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo">
-      <picture>
-        <source>
-        <img>
-      </picture>
-    </a>
-    <div class="main-header__contacts contacts">
-      <address class="contacts__email">
-        <a class="" href="mailto: info@sd.ru">
-          info@sd.ru
-        </a>
-        <span class="visually-hidden">Email для связи</span>
-      </address>
-      <address class="contacts__phone">
-        <a class="" href="tel:+74950005252">
-          +7&nbsp;(495)&nbsp;000 52 52
-        </a>
-        <span class="visually-hidden">Номер телефона для связи</span>
-      </address>
+    <div class="container main-header__container">
+      <a class="main-header__logo header-logo" href="index.html">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./img/svg/logo-small.svg" width="35" height="35">
+          <img class="header-logo__image" src="./img/logo.png" width="215" height="55" alt="Логотип Smart Device, умные технологии" >
+        </picture>
+      </a>
+      <div class="main-header__contacts contacts">
+        <address class="contacts__email">
+          <a class="contacts__email-link" href="mailto: info@sd.ru">
+            <svg class="contacts__email-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#message-icon"></use>
+            </svg>
+            <span class="contacts__email-text">info@sd.ru</span>
+          </a>
+          <span class="visually-hidden">Email для связи</span>
+        </address>
+        <address class="contacts__phone">
+          <a class="contacts__phone-link" href="tel:+74950005252">
+            <svg class="contacts__email-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#phone-icon"></use>
+            </svg>
+            <span class="contacts__phone-text">+7&nbsp;(495)&nbsp;000 52 52</span>
+          </a>
+          <span class="visually-hidden">Номер телефона для связи</span>
+        </address>
+      </div>
+      <button class="main-header__button button" type="button">Заказать звонок</button>
     </div>
-    <button class="main-header__button button" type="button">Заказать звонок</button>
   </header>
-
   <main>
     <div class="intro">
       <h1>Печатные платы</h1>
