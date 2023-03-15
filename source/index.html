@@ -182,30 +182,35 @@
 
       <div class="main-footer__wrapper-nav">
         <div class="main-footer__nav footer-nav">
-          <h2>Разделы сайта</h2>
-          <ul>
-            <li>
-              <a>О Компании</a>
-            </li>
-            <li>
-              <a>Продукты</a>
-            </li>
-            <li>
-              <a>Производство печатных плат</a>
-            </li>
-            <li>
-              <a>Монтаж печатных плат</a>
-            </li>
-            <li>
-              <a>Комплектующие</a>
-            </li>
-            <li>
-              <a>Доставка</a>
-            </li>
-            <li>
-              <a>Контакты</a>
-            </li>
-          </ul>
+          <div class="accordion" data-accordion="parent">
+            <div class="accordion__element" data-accordion="element">
+              <h2>Разделы сайта</h2>
+              <button class="accordion__button" data-accordion="button" type="button">123</button>
+              <ul class="accordion__content" data-accordion="content">
+                <li>
+                  <a>О Компании</a>
+                </li>
+                <li>
+                  <a>Продукты</a>
+                </li>
+                <li>
+                  <a>Производство печатных плат</a>
+                </li>
+                <li>
+                  <a>Монтаж печатных плат</a>
+                </li>
+                <li>
+                  <a>Комплектующие</a>
+                </li>
+                <li>
+                  <a>Доставка</a>
+                </li>
+                <li>
+                  <a>Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="main-footer__contacts footer-contacts">
@@ -272,6 +277,8 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/modules/accordion/accordions.js"></script>
+  <script src="js/modules/accordion/index.js"></script>
 </body>
 
 </html>
