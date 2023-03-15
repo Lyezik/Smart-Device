@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -146,7 +146,7 @@
 
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <img class="header-logo__image" src="./img/logo.png" width="215" height="55"
+          <img class="main-footer__logo-image" src="./img/logo.png" width="215" height="55"
             alt="Логотип Smart Device, умные технологии">
         </div>
 
@@ -180,44 +180,39 @@
         </div>
       </div>
 
-      <div class="main-footer__wrapper-nav">
-        <div class="main-footer__nav footer-nav">
-          <div class="accordion" data-accordion="parent">
-            <div class="accordion__element" data-accordion="element">
-              <h2>Разделы сайта</h2>
-              <button class="accordion__button" data-accordion="button" type="button">123</button>
-              <ul class="accordion__content" data-accordion="content">
-                <li>
-                  <a>О Компании</a>
-                </li>
-                <li>
-                  <a>Продукты</a>
-                </li>
-                <li>
-                  <a>Производство печатных плат</a>
-                </li>
-                <li>
-                  <a>Монтаж печатных плат</a>
-                </li>
-                <li>
-                  <a>Комплектующие</a>
-                </li>
-                <li>
-                  <a>Доставка</a>
-                </li>
-                <li>
-                  <a>Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="main-footer__contacts footer-contacts">
-          <h2>Наш офис</h2>
-          <ul>
+      <div class="main-footer__accordion accordion" data-accordion="parent" data-destroy="(max-width: 767px)"
+        data-single>
+        <div class="main-footer__nav footer-nav accordion__element" data-accordion="element">
+          <h2 data-accordion="button">Разделы сайта</h2>
+          <ul data-accordion="content">
             <li>
-              <address>г. Мытищи, Олимпийский проспект, д.10</address>
+              <a>О Компании</a>
+            </li>
+            <li>
+              <a>Продукты</a>
+            </li>
+            <li>
+              <a>Производство печатных плат</a>
+            </li>
+            <li>
+              <a>Монтаж печатных плат</a>
+            </li>
+            <li>
+              <a>Комплектующие</a>
+            </li>
+            <li>
+              <a>Доставка</a>
+            </li>
+            <li>
+              <a>Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__contacts footer-contacts accordion__element" data-accordion="element">
+          <h2 data-accordion="button">Наш офис</h2>
+          <ul data-accordion="content">
+            <li>
+              <address class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
             </li>
             <li>
               <address class="footer-contacts__phone">
