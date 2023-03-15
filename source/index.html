@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -16,13 +16,15 @@
       <a class="main-header__logo header-logo" href="index.html">
         <picture>
           <source media="(max-width: 767px)" srcset="./img/svg/logo-small.svg" width="35" height="35">
-          <img class="header-logo__image" src="./img/logo.png" width="215" height="55" alt="Логотип Smart Device, умные технологии" >
+          <img class="header-logo__image" src="./img/logo.png" width="215" height="55"
+            alt="Логотип Smart Device, умные технологии">
         </picture>
       </a>
       <div class="main-header__contacts contacts">
         <address class="contacts__email">
           <a class="contacts__email-link" href="mailto: info@sd.ru">
-            <svg class="contacts__email-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="contacts__email-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#message-icon"></use>
             </svg>
             <span class="contacts__email-text">info@sd.ru</span>
@@ -31,7 +33,8 @@
         </address>
         <address class="contacts__phone">
           <a class="contacts__phone-link" href="tel:+74950005252">
-            <svg class="contacts__email-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="contacts__email-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#phone-icon"></use>
             </svg>
             <span class="contacts__phone-text">+7&nbsp;(495)&nbsp;000 52 52</span>
@@ -44,9 +47,17 @@
   </header>
   <main>
     <div class="intro">
-      <h1>Печатные платы</h1>
-      <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <button class="intro__button button" type="button"> Получить бесплатную консультацию</button>
+      <div class="intro__wrapper-image">
+        <img class="intro__image" src="./img/background.png">
+      </div>
+      <div class="intro__container">
+        <h1>Печатные платы</h1>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <button class="intro__button button" type="button">
+          <span class="intro__button-long-text">Получить бесплатную консультацию</span>
+          <span class="intro__button-short-text">Бесплатная консультация</span>
+          </button>
+      </div>
     </div>
 
     <section class="advantages">
@@ -139,64 +150,102 @@
   </main>
 
   <footer class="main-footer">
+    <div class="container main-footer__container">
 
-    <div class="main-footer__logo">
-      <img>
-    </div>
+      <div class="main-footer__wrapper">
+        <div class="main-footer__logo">
+          <img class="main-footer__logo-image" src="./img/logo.png" width="215" height="55"
+            alt="Логотип Smart Device, умные технологии">
+        </div>
 
-    <div class="main-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <svg></svg>
-        </li>
-        <li class="social__item">
-          <svg></svg>
-        </li>
-        <li class="social__item">
-          <svg></svg>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__nav footer-nav">
-      <h2>Разделы сайта</h2>
-      <ul class="footer-nav__list">
-        <li>О Компании</li>
-        <li>Продукты</li>
-        <li>Производство печатных плат</li>
-        <li>Монтаж печатных плат</li>
-        <li>Комплектующие</li>
-        <li>Доставка</li>
-        <li>Контакты</li>
-      </ul>
-    </div>
-    <div class="main-footer__contacts contacts">
-      <h2>Наш офис</h2>
-      <ul class="contacts__list">
-        <li>
-          <address>г. Мытищи, Олимпийский проспект, д.10</address>
-        </li>
-        <li>
-          <address class="">
-            <a class="" href="tel:+74955894050">
-              +7&nbsp;(495)&nbsp;589-40-50
-            </a>
-          </address>
-        </li>
-        <li>
-          <address class="">
-            <a class="" href="tel:+79253895829">
-              +7&nbsp;(925)&nbsp;389-58-29
-            </a>
-          </address>
-        </li>
-        <li>
-          <address class="">
-            <a class="" href="tel:+79253647813">
-              +7&nbsp;(925)&nbsp;364-78-13
-            </a>
-          </address>
-        </li>
-      </ul>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Одноклассники.</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#ok-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Vkontakte.</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Pinterest.</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#pinterest-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-footer__accordion accordion" data-accordion="parent" data-destroy="(max-width: 767px)"
+        data-single>
+        <div class="main-footer__nav footer-nav accordion__element" data-accordion="element">
+          <h2 data-accordion="button">Разделы сайта</h2>
+          <ul data-accordion="content">
+            <li>
+              <a>О Компании</a>
+            </li>
+            <li>
+              <a>Продукты</a>
+            </li>
+            <li>
+              <a>Производство печатных плат</a>
+            </li>
+            <li>
+              <a>Монтаж печатных плат</a>
+            </li>
+            <li>
+              <a>Комплектующие</a>
+            </li>
+            <li>
+              <a>Доставка</a>
+            </li>
+            <li>
+              <a>Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__contacts footer-contacts accordion__element" data-accordion="element">
+          <h2 data-accordion="button">Наш офис</h2>
+          <ul data-accordion="content">
+            <li>
+              <address class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
+            </li>
+            <li>
+              <address class="footer-contacts__phone">
+                <a href="tel:+74955894050">
+                  +7&nbsp;(495)&nbsp;589-40-50
+                </a>
+              </address>
+            </li>
+            <li>
+              <address class="footer-contacts__phone">
+                <a href="tel:+79253895829">
+                  +7&nbsp;(925)&nbsp;389-58-29
+                </a>
+              </address>
+            </li>
+            <li>
+              <address class="footer-contacts__phone">
+                <a href="tel:+79253647813">
+                  +7&nbsp;(925)&nbsp;364-78-13
+                </a>
+              </address>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -231,6 +280,8 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/modules/accordion/accordions.js"></script>
+  <script src="js/modules/accordion/index.js"></script>
 </body>
 
 </html>
