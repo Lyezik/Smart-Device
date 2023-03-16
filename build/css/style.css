@@ -1426,7 +1426,6 @@ button,
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   z-index: 1;
-  margin-top: -15px;
 }
 
 .intro__wrapper-image {
@@ -1486,6 +1485,72 @@ button,
 
 .intro__button-short-text {
   display: none;
+}
+
+.advantages {
+  padding: 120px 10px;
+  margin: 0 auto;
+  max-width: 1242px;
+}
+
+.advantages ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+
+.advantages li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 595px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  gap: 15px;
+  color: #041827;
+  fill: #00b2ff;
+  padding: 43px 45px 35px 46px;
+  border: 1px solid #ebebeb;
+  border-left: 5px solid #00b2ff;
+}
+
+.advantages li:hover {
+  background: #00b2ff;
+  color: #f2f5f7;
+  fill: #f2f5f7;
+}
+
+.advantages li:hover h2 {
+  color: #f2f5f7;
+}
+
+.advantages svg {
+  fill: inherit;
+  margin-bottom: 5px;
+}
+
+.advantages h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #00b2ff;
+  margin: 0;
+}
+
+.advantages p {
+  margin: 0;
+  min-height: 120px;
+  color: inherit;
+  line-height: 22px;
+  text-align: justify;
 }
 
 .main-footer {
@@ -1705,7 +1770,8 @@ button,
   }
 
   .main-header {
-    position: static;
+    position: absolute;
+    top: 0;
   }
 
   .main-header__container {
@@ -1769,7 +1835,7 @@ button,
   }
 
   .intro {
-    padding: 95px 0 205px;
+    padding: 180px 0 205px;
   }
 
   .intro__image {
@@ -1794,6 +1860,37 @@ button,
 
   .intro__button {
     margin-left: 45px;
+  }
+
+  .advantages {
+    padding: 84px 0;
+    max-width: 670px;
+  }
+
+  .advantages ul {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .advantages li {
+    max-width: 320px;
+    padding: 40px 43px 30px 45px;
+    gap: 7px;
+  }
+
+  .advantages svg {
+    margin-bottom: 6px;
+  }
+
+  .advantages h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .advantages p {
+    min-height: 165px;
+    text-align: start;
   }
 
   .main-footer {
@@ -1884,7 +1981,7 @@ button,
   }
 
   .intro {
-    padding: 95px 0 190px;
+    padding: 150px 0 190px;
   }
 
   .intro__image {
@@ -1913,6 +2010,7 @@ button,
     line-height: 16px;
     width: 270px;
     margin-left: 0;
+    padding: 10px 30px;
   }
 
   .intro__button-short-text {
@@ -1921,6 +2019,40 @@ button,
 
   .intro__button-long-text {
     display: none;
+  }
+
+  .advantages {
+    max-width: 270px;
+    padding: 57px 0;
+  }
+
+  .advantages ul {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+
+  .advantages li {
+    max-width: 270px;
+    padding: 30px 35px 0 25px;
+  }
+
+  .advantages svg {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .advantages h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .advantages p {
+    font-size: 14px;
+    line-height: 19px;
+    min-height: 92px;
+    margin-bottom: 71px;
   }
 
   .main-footer {
