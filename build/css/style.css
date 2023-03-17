@@ -1709,7 +1709,7 @@ button,
 
 .questions {
   background: url("../../img/questions-background.jpg") no-repeat;
-  background-position: 0 -573px;
+  background-position: 0 -575px;
   margin: 0 auto;
   max-width: 1920px;
 }
@@ -1718,7 +1718,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 166px 10px 250px;
+  padding: 166px 10px 246px;
   max-width: 1230px;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -1889,7 +1889,7 @@ button,
 }
 
 .main-footer {
-  padding: 50px 10px 55px;
+  padding: 54px 10px 55px;
   background: #041827;
 }
 

@@ -178,22 +178,22 @@
     <section class="questions">
       <div class="questions__container container">
         <img class="questions__image" src="./img/paper-airplane.png" width="510" height="285" alt="Бумажный самолетик.">
-        <form class="questions__form">
+        <form class="questions__form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="questions-form">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
             <label>
-              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Имя" name="name">
             </label>
             <label>
-              <input type="tel" placeholder="Телефон">
+              <input type="tel" placeholder="Телефон" name="phone">
             </label>
-            <textarea placeholder="Ваш вопрос"></textarea>
+            <textarea placeholder="Ваш вопрос" name="question"></textarea>
           </div>
           <button class="questions__button">Задать вопрос</button>
           <div class="questions__wrapper">
             <label>
-              <input type="checkbox">
+              <input type="checkbox" name="agreement" required>
               <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#check-mark"></use>
                 </svg>
