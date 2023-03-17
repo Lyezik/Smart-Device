@@ -12,7 +12,7 @@
 
 <body>
   <header class="main-header">
-    <div class="container main-header__container">
+    <div class="main-header__container container ">
       <a class="main-header__logo header-logo" href="index.html">
         <picture>
           <source media="(max-width: 767px)" srcset="./img/svg/logo-small.svg" width="35" height="35">
@@ -48,7 +48,11 @@
   <main>
     <div class="intro">
       <div class="intro__wrapper-image">
-        <img class="intro__image" src="./img/background.png">
+        <picture>
+          <source media="(max-width: 769px)" srcset="./img/background-320.png">
+          <source media="(max-width: 1023px)" srcset="./img/background-770.png">
+          <img class="intro__image" src="./img/background-1920.png">
+        </picture>
       </div>
       <div class="intro__container">
         <h1>Печатные платы</h1>
@@ -56,33 +60,41 @@
         <button class="intro__button button" type="button">
           <span class="intro__button-long-text">Получить бесплатную консультацию</span>
           <span class="intro__button-short-text">Бесплатная консультация</span>
-          </button>
+        </button>
       </div>
     </div>
 
     <section class="advantages">
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <svg></svg>
+      <ul>
+        <li>
+          <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#watch-icon"></use>
+          </svg>
           <h2>Оперативные сроки</h2>
           <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
             заказы плат и комплектующих в самые короткие сроки</p>
         </li>
-        <li class="advantages__item">
-          <svg></svg>
+        <li>
+          <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#suppliers-icon"></use>
+          </svg>
           <h2>Крупные поставщики</h2>
           <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
             Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
           </p>
         </li>
-        <li class="advantages__item">
-          <svg></svg>
+        <li>
+          <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#confidentially-icon"></use>
+          </svg>
           <h2>Полная конфиденциальность</h2>
           <p>По желанию клиента мы обеспечиваем полную конфиденциальность.
           </p>
         </li>
-        <li class="advantages__item">
-          <svg></svg>
+        <li>
+          <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#price-icon"></use>
+          </svg>
           <h2>Персонализация стоимости</h2>
           <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
             устраивает.
@@ -91,41 +103,75 @@
       </ul>
     </section>
     <section class="about">
-      <img>
-      <div>
-        <h2>О компании</h2>
-        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
-          года. Выполняем срочные заказы и пилотные образцы до 10 дней.<br>
-          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-          РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-          светотехники России.</p>
-        <button type="button"></button>
+      <img class="about__image" src="./img/2022.png" width="150" height="320" alt="Цифры 2022">
+      <div class="about__wrapper about-accordion" data-accordion="parent">
+        <div class="about-accordion__element" data-accordion="element">
+          <div class="about__text-wrapper">
+            <h2>О компании</h2>
+            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+              1997
+              года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              <span>Печатные
+                платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+                светотехники России.</span>
+            </p>
+          </div>
+          <div class="about__hidden-wrapper" data-accordion="content">
+            <p><span>Печатные
+                платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+                светотехники России.</span></p>
+            <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
+              продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20
+              городов присутствия.
+              Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+              Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+          </div>
+          <button class="about__button button" type="button" data-accordion="button">Подробнее</button>
+        </div>
       </div>
     </section>
 
     <section class="services">
-      <h2>Smart Device предлагает следующие товары и услуги</h2>
-      <ul class="services__list">
-        <li class="services__item">
-          <p>Производство печатных плат</p>
-          <button>
-            <svg></svg>
-          </button>
-        </li>
-        <li class="services__item">
-          <p>Монтаж печатных плат</p>
-          <button>
-            <svg></svg>
-          </button>
-        </li>
-        <li class="services__item">
-          <p>Комплектующие для светотехники</p>
-          <button>
-            <svg></svg>
-          </button>
-        </li>
-      </ul>
+      <div class="services__container container">
+        <h2 class="services__title">
+          <span class="services__title-long-text">Smart Device предлагает следующие товары и услуги</span>
+          <span class="services__title-short-text">Товары и услуги Smart Device</span>
+        </h2>
+        <ul class="services__list">
+          <li class="services__item services__item--production">
+            <p class="services__description">Производство печатных плат</p>
+            <button class="services__button button">
+              <svg class="services__button-svg" width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="services__item services__item--assembly">
+            <div class="services__wrapper-image">
+              <p class="services__description">Монтаж печатных плат</p>
+            </div>
+            <button class="services__button button">
+              <svg class="services__button-svg" width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="services__item services__item--accessories">
+            <div class="services__wrapper-image">
+              <p class="services__description">Комплектующие для светотехники</p>
+            </div>
+            <button class="services__button button">
+              <svg class="services__button-svg" width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="form">

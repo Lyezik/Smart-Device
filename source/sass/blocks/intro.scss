@@ -6,14 +6,13 @@
   color: #f2f5f7;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   z-index: 1;
-  margin-top: -15px;
 
   @include vp-1023 {
-    padding: 95px 0 205px;
+    padding: 180px 0 205px;
   }
 
   @include vp-767 {
-    padding: 95px 0 190px;
+    padding: 150px 0 190px;
   }
 }
 
@@ -115,6 +114,7 @@
     line-height: 16px;
     width: 270px;
     margin-left: 0;
+    padding: 10px 30px;
   }
 }
 
