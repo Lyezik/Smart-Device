@@ -1636,6 +1636,10 @@ button,
   margin-bottom: 54px;
 }
 
+.services__title-short-text {
+  display: none;
+}
+
 .services__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2300,6 +2304,14 @@ button,
     line-height: 39px;
     margin-right: 10px;
     margin-bottom: 27px;
+  }
+
+  .services__title-short-text {
+    display: block;
+  }
+
+  .services__title-long-text {
+    display: none;
   }
 
   .services__item {
