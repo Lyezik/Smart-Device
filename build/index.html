@@ -12,7 +12,7 @@
 
 <body>
   <header class="main-header">
-    <div class="container main-header__container">
+    <div class="main-header__container container ">
       <a class="main-header__logo header-logo" href="index.html">
         <picture>
           <source media="(max-width: 767px)" srcset="./img/svg/logo-small.svg" width="35" height="35">
@@ -103,41 +103,72 @@
       </ul>
     </section>
     <section class="about">
-      <img>
-      <div>
-        <h2>О компании</h2>
-        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
-          года. Выполняем срочные заказы и пилотные образцы до 10 дней.<br>
-          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-          РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-          светотехники России.</p>
-        <button type="button"></button>
+      <img class="about__image" src="./img/2022.png" width="150" height="320" alt="Цифры 2022">
+      <div class="about__wrapper about-accordion" data-accordion="parent">
+        <div class="about-accordion__element" data-accordion="element">
+          <div class="about__text-wrapper">
+            <h2>О компании</h2>
+            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+              1997
+              года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              <span>Печатные
+                платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+                светотехники России.</span>
+            </p>
+          </div>
+          <div class="about__hidden-wrapper" data-accordion="content">
+            <p><span>Печатные
+                платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+                светотехники России.</span></p>
+            <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
+              продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20
+              городов присутствия.
+              Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+              Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+          </div>
+          <button class="about__button button" type="button" data-accordion="button">Подробнее</button>
+        </div>
       </div>
     </section>
 
     <section class="services">
-      <h2>Smart Device предлагает следующие товары и услуги</h2>
-      <ul class="services__list">
-        <li class="services__item">
-          <p>Производство печатных плат</p>
-          <button>
-            <svg></svg>
-          </button>
-        </li>
-        <li class="services__item">
-          <p>Монтаж печатных плат</p>
-          <button>
-            <svg></svg>
-          </button>
-        </li>
-        <li class="services__item">
-          <p>Комплектующие для светотехники</p>
-          <button>
-            <svg></svg>
-          </button>
-        </li>
-      </ul>
+      <div class="services__container container">
+        <h2 class="services__title">Smart Device предлагает следующие товары и услуги</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="services__wrapper-image">
+              <picture>
+                <img class="services__image" src="./img/board-production-background.jpg" width="350" height="650"
+                  alt="Печатная плата.">
+              </picture>
+            </div>
+            <p class="services__description">Производство печатных плат</p>
+            <button class="services__button button">
+              <svg></svg>
+            </button>
+          </li>
+          <li class="services__item">
+            <div class="services__wrapper-image">
+              <p class="services__description">Монтаж печатных плат</p>
+            </div>
+            <button class="services__button button">
+              <svg></svg>
+            </button>
+          </li>
+          <li class="services__item">
+            <div class="services__wrapper-image">
+              <p class="services__description">Комплектующие для светотехники</p>
+            </div>
+            <button class="services__button button">
+              <svg></svg>
+            </button>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="form">
