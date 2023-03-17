@@ -1617,7 +1617,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   background: #041827;
-  padding: 35px 20px 140px;
+  padding: 65px 8px 140px;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1632,37 +1632,43 @@ button,
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 54px;
 }
 
 .services__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 85px;
+  gap: 6.96%;
 }
 
 .services__item {
   position: relative;
   max-width: 350px;
   min-height: 650px;
-  padding: 50px 150px 70px 40px;
-  z-index: 2;
+  padding: 48px 137px 70px 40px;
 }
 
-.services__wrapper-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.services__item--production {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/board-background.jpg") no-repeat;
+  background: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
+  background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
+  background-position: -188px -114px;
 }
 
-.services__wrapper-image::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(4, 24, 39, 0.5);
+.services__item--assembly {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/board-background.jpg") no-repeat;
+  background: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
+  background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
+  background-position: -534px -118px;
+}
+
+.services__item--accessories {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/board-background.jpg") no-repeat;
+  background: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
+  background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
+  background-position: -894px -107px;
 }
 
 .services__description {
@@ -1679,6 +1685,7 @@ button,
   width: 60px;
   height: 60px;
   background: #00b2ff;
+  border-width: 0;
   border-radius: 3px 0px 0px 0px;
 }
 
@@ -1992,7 +1999,7 @@ button,
   }
 
   .advantages {
-    padding: 80px 0;
+    padding: 84px 0 76px;
     max-width: 670px;
   }
 
@@ -2004,7 +2011,7 @@ button,
 
   .advantages li {
     max-width: 320px;
-    padding: 40px 43px 30px 45px;
+    padding: 40px 43px 30px 40px;
     gap: 7px;
   }
 
@@ -2032,6 +2039,7 @@ button,
 
   .about__image {
     margin-right: 29px;
+    margin-top: 4px;
   }
 
   .about__text-wrapper {
@@ -2040,6 +2048,48 @@ button,
 
   .about__text-wrapper p {
     margin-bottom: 19px;
+  }
+
+  .services {
+    padding: 58px 50px 75px;
+  }
+
+  .services__container {
+    max-width: 670px;
+  }
+
+  .services__title {
+    margin-bottom: 37px;
+  }
+
+  .services__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .services__item {
+    max-width: 670px;
+    min-height: 250px;
+    padding: 38px 137px 70px 44px;
+  }
+
+  .services__item--production {
+    background-position: -243px -548px;
+  }
+
+  .services__item--assembly {
+    background-position: -628px -315px;
+  }
+
+  .services__item--accessories {
+    background-position: -147px -359px;
+  }
+
+  .services__description {
+    max-width: 150px;
   }
 
   .main-footer {
@@ -2235,6 +2285,47 @@ button,
   .about__button {
     min-width: 160px;
     padding: 8px 15px 9px;
+  }
+
+  .services {
+    padding: 50px 25px 86px;
+  }
+
+  .services__container {
+    max-width: 570px;
+  }
+
+  .services__title {
+    font-size: 28px;
+    line-height: 39px;
+    margin-right: 10px;
+    margin-bottom: 27px;
+  }
+
+  .services__item {
+    max-width: 570px;
+    padding: 26px 105px 70px 31px;
+  }
+
+  .services__item--production {
+    background-position: -376px -298px;
+  }
+
+  .services__item--assembly {
+    background-position: -365px -538px;
+  }
+
+  .services__item--accessories {
+    background-position: -885px -393px;
+  }
+
+  .services__description {
+    font-size: 18px;
+  }
+
+  .services__button {
+    width: 40px;
+    height: 40px;
   }
 
   .main-footer {
