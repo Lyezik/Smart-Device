@@ -58,7 +58,7 @@
   color: #041827;
 
   @include vp-1023 {
-    margin-bottom: 19px;
+    margin-bottom: 17px;
   }
 
   @include vp-767 {
@@ -97,8 +97,24 @@
   background: rgb(0, 0, 0, 0);
   min-width: 180px;
 
+  @include vp-1023 {
+    padding: 14px 13px 13px 12px;
+  }
+
   @include vp-767 {
     min-width: 160px;
     padding: 8px 15px 9px;
   }
+}
+
+.about__button-close {
+  display: none;
+}
+
+.is-active .about__button-close {
+  display: block;
+}
+
+.is-active .about__button-open {
+  display: none;
 }

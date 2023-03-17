@@ -7,7 +7,7 @@
   font-family: $ff-roboto;
 
   @include vp-1023 {
-    padding: 58px 50px 75px;
+    padding: 56px 50px 75px;
   }
 
   @include vp-767 {
@@ -92,6 +92,7 @@
 .services__item--production {
   background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
   background-position: -188px -114px;
+  background-color: rgba(4, 24, 39, 0.5);
 
   @include vp-1023 {
     background-position: -243px -548px;
@@ -105,6 +106,7 @@
 .services__item--assembly {
   background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
   background-position: -534px -118px;
+  background-color: rgba(4, 24, 39, 0.5);
 
   @include vp-1023 {
     background-position: -628px -315px;
@@ -118,6 +120,7 @@
 .services__item--accessories {
   background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
   background-position: -894px -107px;
+  background-color: rgba(4, 24, 39, 0.5);
 
   @include vp-1023 {
     background-position: -147px -359px;
