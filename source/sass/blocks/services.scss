@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding: 50px 25px 86px;
+    padding: 48px 25px 86px;
   }
 }
 
@@ -71,26 +71,16 @@
   }
 }
 
+.services__link {
+  cursor: pointer;
+
+}
+
 .services__item {
   position: relative;
-  max-width: 350px;
-  min-height: 650px;
-  padding: 48px 137px 70px 40px;
-
-  @include vp-1023 {
-    max-width: 670px;
-    min-height: 250px;
-    padding: 38px 137px 70px 44px;
-  }
-
-  @include vp-767 {
-    max-width: 570px;
-    padding: 26px 105px 70px 31px;
-  }
 }
 
 .services__item--production {
-  background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
   background-position: -188px -114px;
   background-color: rgba(4, 24, 39, 0.5);
 
@@ -104,7 +94,6 @@
 }
 
 .services__item--assembly {
-  background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
   background-position: -534px -118px;
   background-color: rgba(4, 24, 39, 0.5);
 
@@ -118,7 +107,6 @@
 }
 
 .services__item--accessories {
-  background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
   background-position: -894px -107px;
   background-color: rgba(4, 24, 39, 0.5);
 
@@ -135,14 +123,21 @@
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+  max-width: 350px;
+  min-height: 640px;
   margin: 0 0 10px;
+  padding: 48px 137px 70px 40px;
 
   @include vp-1023 {
-    max-width: 150px;
+    max-width: 670px;
+    min-height: 240px;
+    padding: 38px 478px 70px 44px;
   }
 
   @include vp-767 {
     font-size: 18px;
+    max-width: 570px;
+    padding: 26px 105px 70px 31px;
   }
 }
 

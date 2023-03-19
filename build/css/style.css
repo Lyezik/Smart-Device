@@ -429,6 +429,7 @@ html {
   line-height: 16px;
   font-family: "PT Mono", "Arial", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1581,7 +1582,7 @@ button,
 .intro__image {
   -o-object-fit: cover;
   object-fit: cover;
-  background: black;
+  background: #000000;
   min-height: 880px;
   width: 100%;
 }
@@ -1815,33 +1816,25 @@ button,
   gap: 6.96%;
 }
 
+.services__link {
+  cursor: pointer;
+}
+
 .services__item {
   position: relative;
-  max-width: 350px;
-  min-height: 650px;
-  padding: 48px 137px 70px 40px;
 }
 
 .services__item--production {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/board-background.jpg") no-repeat;
-  background: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
-  background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
   background-position: -188px -114px;
   background-color: rgba(4, 24, 39, 0.5);
 }
 
 .services__item--assembly {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/board-background.jpg") no-repeat;
-  background: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
-  background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
   background-position: -534px -118px;
   background-color: rgba(4, 24, 39, 0.5);
 }
 
 .services__item--accessories {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/board-background.jpg") no-repeat;
-  background: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
-  background: linear-gradient(rgba(4, 24, 39, 0.5)), url("../../img/board-background.jpg") no-repeat;
   background-position: -894px -107px;
   background-color: rgba(4, 24, 39, 0.5);
 }
@@ -1850,7 +1843,10 @@ button,
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+  max-width: 350px;
+  min-height: 640px;
   margin: 0 0 10px;
+  padding: 48px 137px 70px 40px;
 }
 
 .services__button {
@@ -1866,9 +1862,10 @@ button,
 
 .questions {
   background: url("../../img/questions-background.jpg") no-repeat;
-  background-position: 0 -575px;
   margin: 0 auto;
   max-width: 1920px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .questions__container {
@@ -2395,7 +2392,6 @@ button,
   }
 
   .about {
-    max-width: 674px;
     padding: 0 50px 0 46px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -2439,12 +2435,6 @@ button,
     gap: 30px;
   }
 
-  .services__item {
-    max-width: 670px;
-    min-height: 250px;
-    padding: 38px 137px 70px 44px;
-  }
-
   .services__item--production {
     background-position: -243px -548px;
   }
@@ -2458,11 +2448,13 @@ button,
   }
 
   .services__description {
-    max-width: 150px;
+    max-width: 670px;
+    min-height: 240px;
+    padding: 38px 478px 70px 44px;
   }
 
   .questions {
-    background: #00B3FF;
+    background: #00b3ff;
   }
 
   .questions__container {
@@ -2597,7 +2589,7 @@ button,
   }
 
   .intro__container {
-    max-width: 84.375%;
+    max-width: 84.38%;
     gap: 8px;
   }
 
@@ -2635,25 +2627,25 @@ button,
 
   .advantages {
     max-width: 670px;
-    padding: 51px 25px 53px;
-    margin: 0;
+    padding: 50px 25px 17px;
   }
 
   .advantages ul {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
-    gap: 29px;
+    gap: 30px;
   }
 
   .advantages li {
     max-width: 670px;
-    padding: 30px 35px 0 25px;
+    padding: 30px 35px 35px 25px;
+    min-height: 340px;
   }
 
   .advantages svg {
     width: 30px;
     height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .advantages h2 {
@@ -2665,11 +2657,13 @@ button,
     font-size: 14px;
     line-height: 19px;
     min-height: 92px;
-    margin-bottom: 71px;
   }
 
   .about {
+    max-width: 670px;
     padding: 0 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .about__image {
@@ -2701,7 +2695,7 @@ button,
   }
 
   .services {
-    padding: 50px 25px 86px;
+    padding: 48px 25px 86px;
   }
 
   .services__container {
@@ -2723,11 +2717,6 @@ button,
     display: none;
   }
 
-  .services__item {
-    max-width: 570px;
-    padding: 26px 105px 70px 31px;
-  }
-
   .services__item--production {
     background-position: -376px -298px;
   }
@@ -2742,6 +2731,8 @@ button,
 
   .services__description {
     font-size: 18px;
+    max-width: 570px;
+    padding: 26px 105px 70px 31px;
   }
 
   .services__button {
@@ -2755,7 +2746,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 290px;
-    padding-bottom: 87px;
+    padding: 46px 10px 87px;
   }
 
   .questions__form {
@@ -2884,7 +2875,7 @@ button,
   }
 
   .footer-nav h2 {
-    padding: 20px 52px 20px 25px;
+    padding: 23px 52px 20px 25px;
     margin-bottom: 0;
   }
 
