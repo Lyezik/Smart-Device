@@ -1,0 +1,13 @@
+.is-active .about__button-close {
+  display: block;
+}
+
+.is-active .about__button-open {
+  display: none;
+}
+
+.is-active.accordion__element::after {
+  @include vp-767 {
+    display: none;
+  }
+}
