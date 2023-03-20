@@ -81,6 +81,17 @@
 
 .questions__wrapper {
   width: 260px;
+  position: relative;
+
+  & .input-message {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    font-family: 'PT Mono';
+    font-size: 14px;
+    color: #ff0000;
+    opacity: 1;
+  }
 }
 
 .questions__wrapper input {

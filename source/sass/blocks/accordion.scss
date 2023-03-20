@@ -27,9 +27,3 @@
     transform: rotate(90deg);
   }
 }
-
-.is-active.accordion__element::after {
-  @include vp-767 {
-    display: none;
-  }
-}
