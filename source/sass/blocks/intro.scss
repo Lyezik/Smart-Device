@@ -2,15 +2,31 @@
   padding: 305px 0 280px;
   color: $color-header-white;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, $color-transparent 100%), url("..//../img/intro-background-desktop.jpg") no-repeat;
+
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, $color-transparent 100%), url("..//../img/intro-background-desktop@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+
   z-index: 1;
   margin: 0 auto;
   max-width: 1920px;
   background-color: rgba(25, 32, 36, 0.7);
 
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, $color-transparent 100%), url("..//../img/intro-background-tablet@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+
   @include vp-1023 {
     padding: 180px 0 205px;
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, $color-transparent 100%), url("..//../img/intro-background-tablet.jpg") no-repeat;
     background-position: -123px 0;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, $color-transparent 100%), url("..//../img/intro-background-mobile@2x.jpg") no-repeat;
+    background-size: cover;
   }
 
   @include vp-767 {

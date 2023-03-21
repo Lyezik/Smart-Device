@@ -4,6 +4,12 @@
   }
 }
 
+// @mixin retina-1023 {
+//   @media (min-resolution: $retina-dppx) and (max-width: ($vp-1024 - 1px)) {
+//     @content;
+//   }
+// }
+
 @mixin hover {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
