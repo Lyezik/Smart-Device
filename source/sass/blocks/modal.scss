@@ -58,7 +58,7 @@
     width: 500px;
     padding: 40px;
 
-    background: #00B3FF;
+    background: $color-deep-sky-blue;
     border-radius: 3px;
   }
 
@@ -67,7 +67,7 @@
     top: 17px;
     right: 17px;
     z-index: 1;
-    fill:#ffffff;
+    fill: $color-default-white;
 
     width: 40px;
     height: 40px;
@@ -108,7 +108,7 @@
 
   &__button {
     width: 100%;
-    background: #041427;
+    background: $color-black-pearl;
     border-radius: 3px;
     padding: 15px 25px 11px;
     line-height: 19px;
@@ -117,8 +117,61 @@
     text-transform: uppercase;
     font-weight: 700;
     font-family: $ff-roboto;
-    color: #ffffff;
+    color: $color-default-white;
     border: none;
     margin-right: 50px;
   }
+}
+
+.modal__form-wrapper {
+  position: relative;
+
+  & .input-message {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    font-family: $ff-ptmono;
+    padding-top: 0;
+    font-size: 14px;
+    color: $color-red;
+  }
+}
+
+.modal__form-wrapper input {
+  display: none;
+}
+
+.modal__form-wrapper span {
+  display: block;
+  padding-left: 33px;
+  padding-top: 20px;
+  opacity: 0.8;
+  font-size: 14px;
+  color: $color-default-white;
+}
+
+.modal__form-wrapper label {
+  position: relative;
+}
+
+.modal__form-wrapper label::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+  top: 20px;
+  left: 10px;
+}
+
+.modal__form-wrapper svg {
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 12px;
+}
+
+.modal__form-wrapper input:checked ~ svg {
+  display: block;
 }

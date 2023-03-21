@@ -1,5 +1,6 @@
 .footer-contacts {
-  color: rgba(255, 255, 255, 0.7);
+  color: $color-default-white;
+  opacity: 0.7;
 
   @include vp-1023 {
     padding-right: 5px;
@@ -11,7 +12,7 @@
 }
 
 .footer-contacts h2 {
-  color: #ffffff;
+  color: $color-default-white;
   padding-top: 5px;
   margin: 0 0 20px;
   font-size: 15px;

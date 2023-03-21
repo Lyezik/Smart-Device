@@ -1,16 +1,16 @@
 .questions-form {
   display: flex;
   flex-wrap: wrap;
-  color: #ffffff;
+  color: $color-default-white;
   justify-content: space-between;
 
   & .input-message {
     position: absolute;
     left: 0;
     top: 50px;
-    font-family: 'PT Mono';
+    font-family: $ff-ptmono;
     font-size: 14px;
-    color: #ff0000;
+    color: $color-red;
   }
 }
 
@@ -59,10 +59,10 @@
   padding: 10px 15px 15px;
   border: none;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: $color-default-white;
 
   &::placeholder {
-    color: #ffffff;
+    color: $color-default-white;
   }
 
   @include vp-1023 {
@@ -82,11 +82,11 @@
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
-  color: #ffffff;
+  color: $color-default-white;
   margin-bottom: 36px;
 
   &::placeholder {
-    color: #ffffff;
+    color: $color-default-white;
   }
 
   @include vp-1023 {

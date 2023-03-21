@@ -1,7 +1,7 @@
 .intro {
   padding: 305px 0 280px;
-  color: #f2f5f7;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("..//../img/intro-background-desktop.jpg") no-repeat;
+  color: $color-header-white;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, $color-transparent 100%), url("..//../img/intro-background-desktop.jpg") no-repeat;
   z-index: 1;
   margin: 0 auto;
   max-width: 1920px;
@@ -9,20 +9,20 @@
 
   @include vp-1023 {
     padding: 180px 0 205px;
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("..//../img/intro-background-tablet.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, $color-transparent 100%), url("..//../img/intro-background-tablet.jpg") no-repeat;
     background-position: -123px 0;
   }
 
   @include vp-767 {
     padding: 150px 0 190px;
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("..//../img/intro-background-mobile.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, $color-transparent 100%), url("..//../img/intro-background-mobile.jpg") no-repeat;
     background-position: -228px 0;
   }
 }
 
 .intro__image {
   object-fit: cover;
-  background: #000000;
+  background: $color-default-black;
   min-height: 880px;
   width: 100%;
 
@@ -108,13 +108,13 @@
 
 .intro__button {
   width: 410px;
-  background: #00b2ff;
+  background: $color-deep-sky-blue;
   border-radius: 3px;
   border: 0;
   padding: 15px 25px;
   font-size: 18px;
   line-height: 21px;
-  color: #f2f5f7;
+  color: $color-header-white;
 
   @include vp-1023 {
     margin-left: 45px;

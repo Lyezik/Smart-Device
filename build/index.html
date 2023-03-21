@@ -22,7 +22,7 @@
       </a>
       <div class="main-header__contacts contacts">
         <address class="contacts__email">
-          <a class="contacts__email-link" href="mailto: info@sd.ru">
+          <a class="contacts__email-link" href="mailto:info@sd.ru">
             <svg class="contacts__email-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#message-icon"></use>
@@ -92,7 +92,7 @@
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#price-icon"></use>
             </svg>
-            <h2>Персонализация стоимости</h2>
+            <h3>Персонализация стоимости</h3>
             <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
               устраивает.
             </p>
@@ -148,13 +148,13 @@
             style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
             <a class="services__link" href="#">
               <p class="services__description">Производство печатных плат</p>
-              <button class="services__button button">
+              <div class="services__button">
                 <svg class="services__button-svg" width="5" height="10" viewBox="0 0 5 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
                 <span class="visually-hidden">Стрелка направо.</span>
-              </button>
+              </div>
             </a>
           </li>
           <li class="services__item services__item--assembly"
@@ -163,13 +163,13 @@
               <div class="services__wrapper-image">
                 <p class="services__description">Монтаж печатных плат</p>
               </div>
-              <button class="services__button button">
+              <div class="services__button">
                 <svg class="services__button-svg" width="5" height="10" viewBox="0 0 5 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
                 <span class="visually-hidden">Стрелка направо.</span>
-              </button>
+              </div>
             </a>
           </li>
           <li class="services__item services__item--accessories"
@@ -178,13 +178,13 @@
               <div class="services__wrapper-image">
                 <p class="services__description">Комплектующие для светотехники</p>
               </div>
-              <button class="services__button button">
+              <div class="services__button">
                 <svg class="services__button-svg" width="5" height="10" viewBox="0 0 5 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
                 <span class="visually-hidden">Стрелка направо.</span>
-              </button>
+              </div>
             </a>
           </li>
         </ul>
@@ -199,26 +199,22 @@
             <div class="questions-form">
               <h2>Остались вопросы? Задайте их нам!</h2>
               <p>Мы проконсультируем Вас бесплатно</p>
-              <label>
-                <div data-on-input-validate data-validate-type="text" data-limitation="letters"
-                  data-message-base="Поле обязательно к заполнению" data-required>
-                  <input type="text" placeholder="Имя" name="name">
-                </div>
-              </label>
-              <label>
-                <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
-                  data-required>
-                  <input type="tel" placeholder="Телефон" name="phone">
-                </div>
-              </label>
+              <div class="questions-form__wrapper" data-on-input-validate data-validate-type="text"
+                data-limitation="letters" data-message-base="Поле обязательно к заполнению" data-required>
+                <input type="text" placeholder="Имя" name="name" aria-label="Имя">
+              </div>
+              <div class="questions-form__wrapper" data-on-input-validate data-validate-type="phone"
+                data-message-base="Поле обязательно к заполнению" data-required>
+                <input type="tel" placeholder="Телефон" name="phone" aria-label="Телефон">
+              </div>
               <textarea placeholder="Ваш вопрос" name="question"></textarea>
             </div>
             <button class="questions__button button" type="submit">Задать вопрос</button>
             <div class="questions__wrapper">
-              <div data-on-input-validate data-validate-type="checkbox",
+              <div class="questions__wrapper-checkbox" data-on-input-validate data-validate-type="checkbox"
                 data-message-base="Поле обязательно к заполнению" data-required>
                 <label>
-                  <input type="checkbox" name="agreement" checked required>
+                  <input type="checkbox" name="agreement" id="agreement" checked required>
                   <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#check-mark"></use>
                   </svg>
@@ -343,27 +339,22 @@
           </svg>
         </button>
         <div data-form-validate data-callback="base">
-          <form class="questions__form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="modal__form modal-form">
-              <h2>Закажите звонок</h2>
-              <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-              <label>
-                <div data-on-input-validate data-validate-type="text" data-limitation="letters"
-                  data-message-base="Поле обязательно к заполнению" data-required>
-                  <input type="text" placeholder="Имя" name="name" data-focus>
-                </div>
-              </label>
-              <label>
-                <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
-                  data-required>
-                  <input type="tel" placeholder="Телефон" name="phone">
-                </div>
-              </label>
-              <textarea placeholder="Ваш вопрос" name="question"></textarea>
+          <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <h2>Закажите звонок</h2>
+            <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+            <div class="modal-form__wrapper" data-on-input-validate data-validate-type="text" data-limitation="letters"
+              data-message-base="Поле обязательно к заполнению" data-required>
+              <input type="text" placeholder="Имя" name="name" aria-label="Имя" data-focus>
             </div>
+            <div class="modal-form__wrapper" data-on-input-validate data-validate-type="phone"
+              data-message-base="Поле обязательно к заполнению" data-required>
+              <input type="tel" placeholder="Телефон" name="phone" aria-label="Телефон">
+            </div>
+            <textarea placeholder="Ваш вопрос" name="question"></textarea>
+
             <button class="modal__button button">Отправить</button>
             <div class="modal__form-wrapper">
-              <div data-on-input-validate data-validate-type="checkbox" ,
+              <div data-on-input-validate data-validate-type="checkbox"
                 data-message-base="Поле обязательно к заполнению" data-required>
                 <label>
                   <input type="checkbox" name="agreement" required>
@@ -382,8 +373,6 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
-  <script src="js/modules/accordion/accordions.js"></script>
-  <script src="js/modules/accordion/index.js"></script>
 </body>
 
 </html>

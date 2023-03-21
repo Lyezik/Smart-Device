@@ -1,5 +1,5 @@
 .main-header {
-  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background: linear-gradient(180deg, $color-black-pearl 84.9%, $color-transparent 100%);
   position: fixed;
   top: 0;
   width: 100%;
@@ -57,9 +57,9 @@
   color: $color-header-white;
   margin-bottom: 10px;
   padding: 10px 15px;
-  border: 1px solid #f2f5f7;
+  border: 1px solid $color-header-white;
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: $color-transparent;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
