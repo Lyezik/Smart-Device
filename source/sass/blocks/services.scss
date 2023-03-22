@@ -62,7 +62,6 @@
 
 .services__list {
   display: flex;
-  flex-wrap: wrap;
   gap: 85px;
 
   @include vp-1023 {
@@ -155,13 +154,13 @@
   line-height: 30px;
   color: $color-default-white;
   max-width: 350px;
-  min-height: 640px;
+  min-height: 650px;
   margin: 0;
   padding: 48px 137px 70px 40px;
 
   @include vp-1023 {
     max-width: 670px;
-    min-height: 240px;
+    min-height: 250px;
     padding: 38px 478px 70px 44px;
   }
 
