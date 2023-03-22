@@ -1,6 +1,18 @@
 .accordion__element {
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .accordion__element::before {
@@ -9,9 +21,9 @@
     position: absolute;
     width: 15px;
     height: 1px;
-    background: #C4C4C4;
+    background: $color-silver;
     right: 26px;
-    top: 25px;
+    top: 28px;
   }
 }
 
@@ -21,9 +33,9 @@
     position: absolute;
     width: 15px;
     height: 1px;
-    background: #C4C4C4;
+    background: $color-silver;
     right: 26px;
-    top: 26px;
+    top: 28px;
     transform: rotate(90deg);
   }
 }

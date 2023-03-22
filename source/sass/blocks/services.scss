@@ -1,7 +1,7 @@
 .services {
   display: flex;
   flex-direction: column;
-  background: #041827;
+  background: $color-black-pearl;
   padding: 65px 8px 140px;
   box-sizing: content-box;
   font-family: $ff-roboto;
@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding: 48px 25px 86px;
+    padding: 47px 25px 86px;
   }
 }
 
@@ -31,7 +31,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  color: #ffffff;
+  color: $color-default-white;
   margin-top: 0;
   margin-bottom: 54px;
 
@@ -42,8 +42,7 @@
   @include vp-767 {
     font-size: 28px;
     line-height: 39px;
-    margin-right: 10px;
-    margin-bottom: 27px;
+    margin: 0 10px 29px 1px;
   }
 }
 
@@ -63,7 +62,8 @@
 
 .services__list {
   display: flex;
-  gap: 6.96%;
+  flex-wrap: wrap;
+  gap: 85px;
 
   @include vp-1023 {
     flex-direction: column;
@@ -74,6 +74,19 @@
 .services__link {
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.4;
+    outline: none;
+  }
 }
 
 .services__item {
@@ -83,6 +96,12 @@
 .services__item--production {
   background-position: -188px -114px;
   background-color: rgba(4, 24, 39, 0.5);
+  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background@2x.png") no-repeat;
+    background-size: 1493.33px 817.14px;
+  }
 
   @include vp-1023 {
     background-position: -243px -548px;
@@ -96,6 +115,12 @@
 .services__item--assembly {
   background-position: -534px -118px;
   background-color: rgba(4, 24, 39, 0.5);
+  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background@2x.png") no-repeat;
+    background-size: 1493.33px 817.14px;
+  }
 
   @include vp-1023 {
     background-position: -628px -315px;
@@ -109,6 +134,12 @@
 .services__item--accessories {
   background-position: -894px -107px;
   background-color: rgba(4, 24, 39, 0.5);
+  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background@2x.png") no-repeat;
+    background-size: 1493.33px 817.14px;
+  }
 
   @include vp-1023 {
     background-position: -147px -359px;
@@ -122,10 +153,10 @@
 .services__description {
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: $color-default-white;
   max-width: 350px;
   min-height: 640px;
-  margin: 0 0 10px;
+  margin: 0;
   padding: 48px 137px 70px 40px;
 
   @include vp-1023 {
@@ -137,19 +168,22 @@
   @include vp-767 {
     font-size: 18px;
     max-width: 570px;
-    padding: 26px 105px 70px 31px;
+    padding: 26px 105px 70px 30px;
   }
 }
 
 .services__button {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: 0;
   right: 0;
   width: 60px;
   height: 60px;
-  background: #00b2ff;
+  background: $color-deep-sky-blue;
   border-width: 0;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
 
   @include vp-767 {
     width: 40px;

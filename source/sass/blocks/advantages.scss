@@ -1,10 +1,10 @@
 .advantages {
-  padding: 120px 10px 115px;
+  padding: 120px 10px 119px;
   margin: 0 auto;
   max-width: 1242px;
 
   @include vp-1023 {
-    padding: 80px 0 76px;
+    padding: 80px 0 75px;
     max-width: 670px;
   }
 
@@ -14,7 +14,7 @@
   }
 }
 
-.advantages ul {
+.advantages__container ul {
   display: grid;
   grid-template-columns: auto auto;
   gap: 30px;
@@ -29,42 +29,43 @@
   }
 }
 
-.advantages li {
+.advantages__container li {
   display: flex;
   flex-direction: column;
   max-width: 595px;
+  min-height: 300px;
   flex-grow: 1;
   gap: 15px;
-  color: #041827;
-  fill: #00b2ff;
-  padding: 42px 45px 35px 42px;
-  border: 1px solid #ebebeb;
-  border-left: 5px solid #00b2ff;
+  color: $color-black-pearl;
+  fill: $color-deep-sky-blue;
+  padding: 40px 45px 35px 42px;
+  border: 1px solid $color-whisper;
+  border-left: 5px solid $color-deep-sky-blue;
 
   @include vp-1023 {
     max-width: 320px;
-    padding: 40px 43px 30px 40px;
-    gap: 7px;
+    padding: 39px 43px 27px 40px;
+    gap: 9px;
   }
 
   @include vp-767 {
     max-width: 670px;
-    padding: 30px 35px 35px 25px;
+    padding: 29px 35px 35px 25px;
     min-height: 340px;
   }
 }
 
-.advantages li:hover {
-  background: #00b2ff;
-  color: #f2f5f7;
-  fill: #f2f5f7;
+.advantages__container li:hover {
+  background: $color-deep-sky-blue;
+  color: $color-header-white;
+  fill: $color-header-white;
 
   & h2 {
-    color: #f2f5f7;
+    color: $color-header-white;
   }
 }
 
-.advantages svg {
+.advantages__container svg {
   fill: inherit;
   margin-bottom: 5px;
 
@@ -79,12 +80,12 @@
   }
 }
 
-.advantages h3 {
+.advantages__container h3 {
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
   font-family: $ff-roboto;
-  color: #00b2ff;
+  color: $color-deep-sky-blue;
   margin: 0;
 
   @include vp-1023 {
@@ -98,12 +99,10 @@
   }
 }
 
-.advantages p {
+.advantages__container p {
   margin: 0;
-  min-height: 120px;
   color: inherit;
   line-height: 22px;
-  text-align: justify;
 
   @include vp-1023 {
     min-height: 165px;
