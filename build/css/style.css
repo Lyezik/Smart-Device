@@ -650,16 +650,16 @@ button,
 }
 
 .button:hover {
-  opacity: 0.7;
+  outline: solid rgb(11, 11, 148);
+  opacity: 0.9;
 }
 
 .button:focus {
-  opacity: 0.7;
-  outline: none;
+  outline: solid rgb(11, 11, 148);
 }
 
 .button:active {
-  opacity: 0.4;
+  opacity: 0.7;
   outline: none;
 }
 
@@ -1755,6 +1755,20 @@ button,
   margin-bottom: 30px;
 }
 
+.main-footer__link:hover {
+  opacity: 0.7;
+}
+
+.main-footer__link:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.main-footer__link:active {
+  opacity: 0.4;
+  outline: none;
+}
+
 .main-footer__nav {
   position: relative;
   margin-right: 3%;
@@ -1937,6 +1951,18 @@ button,
 .accordion__element {
   position: relative;
   cursor: pointer;
+}
+
+.accordion__element:hover {
+  opacity: 0.7;
+}
+
+.accordion__element:focus {
+  opacity: 0.7;
+}
+
+.accordion__element:active {
+  opacity: 0.4;
 }
 
 .is-active .about__button-close {
@@ -2702,7 +2728,7 @@ button,
     height: 1px;
     background: #c4c4c4;
     right: 26px;
-    top: 26px;
+    top: 28px;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
