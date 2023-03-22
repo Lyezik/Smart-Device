@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding: 48px 25px 86px;
+    padding: 47px 25px 86px;
   }
 }
 
@@ -42,8 +42,7 @@
   @include vp-767 {
     font-size: 28px;
     line-height: 39px;
-    margin-right: 10px;
-    margin-bottom: 27px;
+    margin: 0 10px 29px 1px;
   }
 }
 
@@ -63,7 +62,8 @@
 
 .services__list {
   display: flex;
-  gap: 6.96%;
+  flex-wrap: wrap;
+  gap: 85px;
 
   @include vp-1023 {
     flex-direction: column;
@@ -73,6 +73,20 @@
 
 .services__link {
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.4;
+    outline: none;
+  }
 }
 
 .services__item {
@@ -82,7 +96,7 @@
 .services__item--production {
   background-position: -188px -114px;
   background-color: rgba(4, 24, 39, 0.5);
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('../../img/board-background.jpg');
+  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background.jpg");
 
   @media (min-resolution: $retina-dppx) {
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background@2x.png") no-repeat;
@@ -101,7 +115,7 @@
 .services__item--assembly {
   background-position: -534px -118px;
   background-color: rgba(4, 24, 39, 0.5);
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('../../img/board-background.jpg');
+  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background.jpg");
 
   @media (min-resolution: $retina-dppx) {
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background@2x.png") no-repeat;
@@ -120,7 +134,7 @@
 .services__item--accessories {
   background-position: -894px -107px;
   background-color: rgba(4, 24, 39, 0.5);
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('../../img/board-background.jpg');
+  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background.jpg");
 
   @media (min-resolution: $retina-dppx) {
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../../img/board-background@2x.png") no-repeat;
@@ -142,7 +156,7 @@
   color: $color-default-white;
   max-width: 350px;
   min-height: 640px;
-  margin: 0 0 10px;
+  margin: 0;
   padding: 48px 137px 70px 40px;
 
   @include vp-1023 {
@@ -154,7 +168,7 @@
   @include vp-767 {
     font-size: 18px;
     max-width: 570px;
-    padding: 26px 105px 70px 31px;
+    padding: 26px 105px 70px 30px;
   }
 }
 

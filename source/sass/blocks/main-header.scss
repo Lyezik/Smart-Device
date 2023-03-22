@@ -15,6 +15,7 @@
   display: flex;
   max-width: 1240px;
   padding-right: 70px;
+  padding-top: 5px;
   align-items: center;
   flex-wrap: wrap;
 
@@ -23,39 +24,50 @@
   }
 }
 
-.main-header__logo {
-  padding: 30px 0 35px 0;
-  padding-left: 10px;
+.main-header__wrapper-logo {
+  padding: 25px 0 35px 10px;
+  max-width: 215px;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
   @include vp-1023 {
-    padding: 20px 0 25px 50px;
+    padding: 10px 0 25px 50px;
     margin-right: auto;
   }
 
   @include vp-767 {
-    padding: 15px 0 20px 26px;
+    padding: 9px 0 20px 26px;
   }
 }
 
 .main-header__contacts {
-  padding: 45px 0 55px 0;
+  padding: 40px 0 55px 0;
   margin: 0 auto;
-  padding-left: 15px;
+
+  max-width: 480px;
 
   @include vp-1023 {
-    padding: 20px 70px 40px 0;
+    padding: 15px 70px 40px 0;
     margin: 0;
   }
 
   @include vp-767 {
-    padding: 10px 35px 20px 0;
+    padding: 5px 35px 20px 0;
   }
+}
+
+.main-header__wrapper-button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .main-header__button {
   width: 160px;
   color: $color-header-white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 10px 15px;
   border: 1px solid $color-header-white;
   border-radius: 3px;
@@ -67,5 +79,21 @@
 
   @include vp-1023 {
     display: none;
+  }
+}
+
+.main-header__logo {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.4;
+    outline: none;
   }
 }

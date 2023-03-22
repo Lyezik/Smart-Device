@@ -3,6 +3,16 @@
   flex-wrap: wrap;
   color: $color-default-white;
   justify-content: space-between;
+  padding-right: 5px;
+
+  @include vp-1023 {
+    padding-right: 0;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    width: 100%;
+  }
 
   & .input-message {
     position: absolute;
@@ -20,9 +30,11 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0 0 13px;
+  margin-left: -5px;
 
   @include vp-1023 {
     margin-bottom: 8px;
+    margin-left: 0;
   }
 
   @include vp-767 {
@@ -56,7 +68,7 @@
   width: 275px;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  padding: 10px 15px 15px;
+  padding: 12px 15px 15px;
   border: none;
   margin-bottom: 20px;
   color: $color-default-white;
@@ -70,8 +82,24 @@
   }
 
   @include vp-767 {
-    width: 270px;
+    width: 100%;
     padding: 12px 15px 15px;
+  }
+
+  &:hover {
+    background: rgba(4, 20, 39, 0.35);
+    opacity: 0.7;
+  }
+
+  &:focus {
+    background: rgba(4, 20, 39, 0.2);
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    background: rgba(4, 20, 39, 0.25);
+    outline: none;
   }
 }
 
@@ -83,19 +111,40 @@
   border-radius: 3px;
   border: none;
   color: $color-default-white;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 
   &::placeholder {
     color: $color-default-white;
   }
 
   @include vp-1023 {
-    padding-top: 35px;
+    padding-top: 33px;
+    margin-bottom: 36px;
   }
 
   @include vp-767 {
     padding-top: 25px;
     min-height: 180px;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
+
+  &:hover {
+    background: rgba(4, 20, 39, 0.35);
+    opacity: 0.7;
+  }
+
+  &:focus {
+    background: rgba(4, 20, 39, 0.2);
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    background: rgba(4, 20, 39, 0.25);
+    outline: none;
+  }
+}
+
+.questions-form__wrapper {
+  position: relative;
 }

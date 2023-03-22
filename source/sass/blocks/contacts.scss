@@ -1,9 +1,18 @@
 .contacts {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include vp-1023 {
+    gap: 6px;
+  }
+
+  @include vp-767 {
+    max-width: 215px;
+  }
 }
 
 .contacts__email {
-  margin-right: 30px;
   width: 225px;
   align-self: center;
 
@@ -31,6 +40,22 @@
   line-height: 18px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-left: 11px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.4;
+    outline: none;
+  }
 }
 
 .contacts__email-text {
@@ -56,7 +81,7 @@
 }
 
 .contacts__phone-icon {
-  margin-right: 15px;
+  margin-right: 18px;
 
   @include vp-1023 {
     margin-right: 0;
@@ -68,6 +93,20 @@
   line-height: 18px;
   display: flex;
   align-items: center;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.4;
+    outline: none;
+  }
 }
 
 .contacts__phone-text {

@@ -38,7 +38,7 @@
     align-items: start;
     width: 100%;
     min-height: 100%;
-    padding: 146px 40px 0 25px;
+    padding: 145px 40px 0 25px;
   }
 
   &__overlay {
@@ -56,7 +56,7 @@
     position: relative;
 
     width: 500px;
-    padding: 40px;
+    padding: 40px 40px 44px;
 
     background: $color-deep-sky-blue;
     border-radius: 3px;
@@ -148,6 +148,8 @@
   opacity: 0.8;
   font-size: 14px;
   color: $color-default-white;
+
+  text-align: justify;
 }
 
 .modal__form-wrapper label {
@@ -162,14 +164,14 @@
   border: 1px solid $color-default-white;
   border-radius: 2px;
   top: 20px;
-  left: 10px;
+  left: 8px;
 }
 
 .modal__form-wrapper svg {
   display: none;
   position: absolute;
   top: 24px;
-  left: 12px;
+  left: 10px;
 }
 
 .modal__form-wrapper input:checked ~ svg {
