@@ -224,7 +224,7 @@
               <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
 
               <div class="questions-form__wrapper" data-on-input-validate data-validate-type="text"
-                data-limitation="letters" data-message-base="Поле обязательно к заполнению" data-required>
+                data-limitation="name" data-message-base="Поле обязательно к заполнению" data-required>
                 <input type="text" placeholder="Имя" name="name" aria-label="Имя">
               </div>
               <div class="questions-form__wrapper" data-on-input-validate data-validate-type="phone"
@@ -303,22 +303,22 @@
               <a href="#">О&nbsp;Компании</a>
             </li>
             <li>
-              <a href="#">Продукты</a>
-            </li>
-            <li>
-              <a href="#">Производство печатных плат</a>
-            </li>
-            <li>
-              <a href="#">Монтаж печатных плат</a>
-            </li>
-            <li>
               <a href="#">Комплектующие</a>
+            </li>
+            <li>
+              <a href="#">Продукты</a>
             </li>
             <li>
               <a href="#">Доставка</a>
             </li>
             <li>
+              <a href="#">Производство печатных плат</a>
+            </li>
+            <li>
               <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Монтаж печатных плат</a>
             </li>
           </ul>
         </div>
@@ -358,7 +358,7 @@
 
   <!-- Модалки -->
 
-  <div class="modal modal--preload" data-modal="feedback">
+  <div class="modal modal--preload" data-modal="feedback" data-close-modal>
     <div class="modal__wrapper">
       <div class="modal__content">
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
@@ -370,7 +370,7 @@
           <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <h2>Закажите звонок</h2>
             <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
-            <div class="modal-form__wrapper" data-on-input-validate data-validate-type="text" data-limitation="letters"
+            <div class="modal-form__wrapper" data-on-input-validate data-validate-type="text" data-limitation="name"
               data-message-base="Поле обязательно к заполнению" data-required>
               <input type="text" placeholder="Имя" name="name" aria-label="Имя" data-focus>
             </div>
