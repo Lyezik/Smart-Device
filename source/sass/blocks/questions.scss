@@ -1,5 +1,5 @@
 .questions {
-  background: url("../../img/questions-background.jpg") no-repeat, $color-deep-sky-blue;
+  background: url("../img/questions-background.jpg") no-repeat, $color-deep-sky-blue;
 
   margin: 0 auto;
   object-fit: cover;
@@ -24,7 +24,7 @@
   @include vp-767 {
     flex-direction: column;
     max-width: 650px;
-    padding: 46px 10px 88px;
+    padding: 46px 10px 84px;
   }
 }
 
@@ -102,8 +102,8 @@
   }
 }
 
-.questions__wrapper input {
-  display: none;
+.questions__wrapper input:focus~span {
+  opacity: 0.5;
 }
 
 .questions__wrapper span {
@@ -113,6 +113,7 @@
   opacity: 0.8;
   font-size: 14px;
   color: $color-default-white;
+  cursor: pointer;
 
   @include vp-1023 {
     padding-top: 10px;
@@ -120,11 +121,18 @@
 
   @include vp-767 {
     padding-left: 30px;
+    padding-top: 0;
   }
 }
 
 .questions__wrapper label {
   position: relative;
+
+  @include vp-767 {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+  }
 
   &:hover {
     opacity: 0.7;

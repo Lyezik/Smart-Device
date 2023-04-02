@@ -11,7 +11,8 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
+  ;
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -38,7 +39,7 @@
     align-items: start;
     width: 100%;
     min-height: 100%;
-    padding: 145px 40px 0 25px;
+    padding: 145px 40px 25px 25px;
   }
 
   &__overlay {
@@ -76,6 +77,12 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      background: rgba(14, 62, 120, 0.35);
+      opacity: 0.7;
+    }
+
   }
 
   &--responsive {
@@ -137,8 +144,18 @@
   }
 }
 
-.modal__form-wrapper input {
-  display: none;
+.modal__form-wrapper label {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.modal__form-wrapper input:focus~span {
+  opacity: 0.5;
 }
 
 .modal__form-wrapper span {
@@ -148,6 +165,7 @@
   opacity: 0.8;
   font-size: 14px;
   color: $color-default-white;
+  cursor: pointer;
 
   text-align: justify;
 }
@@ -174,6 +192,6 @@
   left: 10px;
 }
 
-.modal__form-wrapper input:checked ~ svg {
+.modal__form-wrapper input:checked~svg {
   display: block;
 }

@@ -1,4 +1,5 @@
 .main-header {
+  background-color: $color-black-pearl;
   background: linear-gradient(180deg, $color-black-pearl 84.9%, $color-transparent 100%);
   position: fixed;
   top: 0;
@@ -21,6 +22,7 @@
 
   @include vp-1023 {
     padding-right: 0;
+    flex-wrap: nowrap;
   }
 }
 
@@ -35,6 +37,7 @@
   @include vp-1023 {
     padding: 10px 0 25px 50px;
     margin-right: auto;
+    flex-shrink: 0;
   }
 
   @include vp-767 {
@@ -51,6 +54,7 @@
   @include vp-1023 {
     padding: 15px 70px 40px 0;
     margin: 0;
+    max-width: max-content;
   }
 
   @include vp-767 {
