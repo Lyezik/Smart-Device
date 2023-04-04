@@ -814,6 +814,9 @@ button,
 
 .modal__form-wrapper {
   position: relative;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .modal__form-wrapper .input-message {
@@ -1623,6 +1626,9 @@ button,
 .questions__wrapper {
   width: 260px;
   position: relative;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .questions__wrapper .input-message {

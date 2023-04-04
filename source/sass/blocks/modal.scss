@@ -132,6 +132,7 @@
 
 .modal__form-wrapper {
   position: relative;
+  order: 2;
 
   & .input-message {
     position: absolute;
