@@ -117,7 +117,7 @@
     <section class="about">
       <picture>
         <source type="image/webp" srcset="./img/2022.webp 1x , ./img/2022@2x.webp 2x" width="150" height="320">
-        <img class="about__image" src="./img/2022.png" srcset="./img/2022@2x.png 2x" width="150" height="320"
+        <amp-img class="about__image" src="./img/2022.png" srcset="./img/2022@2x.png 2x" width="150" height="320"
           alt="Цифры 2022.">
       </picture>
       <div class="about__wrapper about-accordion" data-accordion="parent">
@@ -214,7 +214,7 @@
         <picture>
           <source type="image/webp" srcset="./img/paper-airplane.webp 1x , ./img/paper-airplane@2x.webp 2x" width="510"
             height="285">
-          <img class="questions__image" src="./img/paper-airplane.png" srcset="./img/paper-airplane@2x.png 2x"
+          <amp-img class="questions__image" src="./img/paper-airplane.png" srcset="./img/paper-airplane@2x.png 2x"
             width="510" height="285" alt="Бумажный самолетик.">
         </picture>
         <div class="questions__form-wrapper" data-form-validate data-callback="base">
@@ -233,7 +233,6 @@
               </div>
               <textarea placeholder="Ваш вопрос" name="question" aria-label="Ваш вопрос"></textarea>
             </div>
-            <button class="questions__button button" type="submit">Задать вопрос</button>
             <div class="questions__wrapper">
               <div class="questions__wrapper-checkbox" data-on-input-validate data-validate-type="checkbox"
                 data-message-base="Поле обязательно к заполнению" data-required>
@@ -246,6 +245,7 @@
                 </label>
               </div>
             </div>
+            <button class="questions__button button" type="submit">Задать вопрос</button>
           </form>
         </div>
       </div>
@@ -258,7 +258,7 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <a class="main-footer__link" href="index.html">
-            <img class="main-footer__logo-image" src="./img/svg/logo.svg" width="215" height="55"
+            <amp-img class="main-footer__logo-image" src="./img/svg/logo.svg" width="215" height="55"
               alt="Логотип Smart Device, умные технологии.">
           </a>
         </div>
@@ -358,8 +358,9 @@
 
   <!-- Модалки -->
 
-  <div class="modal modal--preload" data-modal="feedback" data-close-modal>
+  <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -380,7 +381,6 @@
             </div>
             <textarea placeholder="Ваш вопрос" name="question" aria-label="Ваш вопрос"></textarea>
 
-            <button class="modal__button button">Отправить</button>
             <div class="modal__form-wrapper">
               <div data-on-input-validate data-validate-type="checkbox"
                 data-message-base="Поле обязательно к заполнению" data-required>
@@ -393,6 +393,7 @@
                 </label>
               </div>
             </div>
+            <button class="modal__button button">Отправить</button>
           </form>
         </div>
       </div>
