@@ -63,7 +63,7 @@
 .services__list {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 83px;
+  gap: 7%;
 
   @include vp-1023 {
     grid-template-columns: 100%;
@@ -79,6 +79,7 @@
   background-position: -188px -114px;
   background-color: rgba(29, 75, 110, 0.8);
   background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg");
+  background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dppx) {
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg");
@@ -98,6 +99,7 @@
   background-position: -534px -118px;
   background-color: rgba(29, 75, 110, 0.8);
   background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg");
+  background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dppx) {
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg");
@@ -117,6 +119,7 @@
   background-position: -894px -107px;
   background-color: rgba(29, 75, 110, 0.8);
   background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg");
+  background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dppx) {
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg");
@@ -135,7 +138,7 @@
 .services__link {
   display: block;
   cursor: pointer;
-  max-width: 350px;
+  max-width: 330px;
   min-height: 650px;
   padding: 48px 137px 70px 40px;
 
