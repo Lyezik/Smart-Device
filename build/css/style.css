@@ -1489,7 +1489,7 @@ button,
   display: grid;
   -ms-grid-columns: auto auto auto;
   grid-template-columns: auto auto auto;
-  gap: 83px;
+  gap: 7%;
 }
 
 .services__item {
@@ -1497,33 +1497,30 @@ button,
 }
 
 .services__item--production {
-  background-position: -188px -114px;
   background-color: rgba(29, 75, 110, 0.8);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background.jpg");
-  background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg");
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg");
+  background-image: url("../img/board-production-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .services__item--assembly {
-  background-position: -534px -118px;
   background-color: rgba(29, 75, 110, 0.8);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background.jpg");
-  background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg");
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg");
+  background-image: url("../img/board-assembly-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .services__item--accessories {
-  background-position: -894px -107px;
   background-color: rgba(29, 75, 110, 0.8);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background.jpg");
-  background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg");
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg");
+  background-image: url("../img/board-accessories-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .services__link {
   display: block;
   cursor: pointer;
-  max-width: 350px;
+  max-width: 330px;
   min-height: 650px;
   padding: 48px 137px 70px 40px;
 }
@@ -2189,6 +2186,18 @@ button,
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(255, 255, 255, 0) 100%), url("..//../img/intro-background-desktop@2x.jpg") no-repeat;
     background-size: cover;
   }
+
+  .services__item--production {
+    background-image: url("../img/board-production-desktop@2x.jpg");
+  }
+
+  .services__item--assembly {
+    background-image: url("../img/board-assembly-desktop@2x.jpg");
+  }
+
+  .services__item--accessories {
+    background-image: url("../img/board-accessories-desktop@2x.jpg");
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2401,15 +2410,15 @@ button,
   }
 
   .services__item--production {
-    background-position: -243px -548px;
+    background-image: url("../img/board-production-tablet.jpg");
   }
 
   .services__item--assembly {
-    background-position: -628px -315px;
+    background-image: url("../img/board-assembly-tablet.jpg");
   }
 
   .services__item--accessories {
-    background-position: -147px -359px;
+    background-image: url("../img/board-accessories-tablet.jpg");
   }
 
   .services__link {
@@ -2569,6 +2578,20 @@ button,
     background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(255, 255, 255, 0) 100%), url("..//../img/intro-background-tablet@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(255, 255, 255, 0) 100%), url("..//../img/intro-background-tablet@2x.jpg") no-repeat;
     background-size: cover;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .services__item--production {
+    background-image: url("../img/board-production-tablet@2x.jpg");
+  }
+
+  .services__item--assembly {
+    background-image: url("../img/board-assembly-tablet@2x.jpg");
+  }
+
+  .services__item--accessories {
+    background-image: url("../img/board-accessories-tablet@2x.jpg");
   }
 }
 
@@ -2746,15 +2769,15 @@ button,
   }
 
   .services__item--production {
-    background-position: -376px -298px;
+    background-image: url("../img/board-production-mobile.jpg");
   }
 
   .services__item--assembly {
-    background-position: -365px -538px;
+    background-image: url("../img/board-assembly-mobile.jpg");
   }
 
   .services__item--accessories {
-    background-position: -885px -393px;
+    background-image: url("../img/board-accessories-mobile.jpg");
   }
 
   .services__link {
@@ -2921,7 +2944,7 @@ button,
   .footer-contacts button {
     display: block;
     width: 100%;
-    padding: 23px 52px 17px 24px;
+    padding: 23px 52px 15px 24px;
     margin-bottom: 0;
   }
 
@@ -2996,34 +3019,25 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .services__item--production {
+    background-image: url("../img/board-production-mobile@2x.jpg");
+  }
+
+  .services__item--assembly {
+    background-image: url("../img/board-assembly-mobile@2x.jpg");
+  }
+
+  .services__item--accessories {
+    background-image: url("../img/board-accessories-mobile@2x.jpg");
+  }
+}
+
 @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 766px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 766px), (min-resolution: 2dppx) and (max-width: 766px) {
   .intro {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(255, 255, 255, 0))), url("..//../img/intro-background-mobile@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(255, 255, 255, 0) 100%), url("..//../img/intro-background-mobile@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(255, 255, 255, 0) 100%), url("..//../img/intro-background-mobile@2x.jpg") no-repeat;
     background-size: cover;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg");
-    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg");
-    background-size: 1493.33px 817.14px;
-  }
-
-  .services__item--assembly {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg");
-    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg");
-    background-size: 1493.33px 817.14px;
-  }
-
-  .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg");
-    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg");
-    background-size: 1493.33px 817.14px;
   }
 }
